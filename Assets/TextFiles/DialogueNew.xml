@@ -1,0 +1,1203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<dialogues>
+  <dialogue id="0">
+    <if condition="tieneLlave">
+      <o0d>¡Mi pastel! ¿Dónde diablos está mi pastel?</o0d>
+      <g0r>Si es que somos los putos amos.</g0r>
+    </if>
+    <else>
+      <p0r>Mmmmh...¡Parece que falta una [?]llave[/?]!</p0r>
+      <g0l>Que misterio más misterioso</g0l>
+      <p0r>¿Alguna idea?</p0r>
+      <g0l>Quizá la tenga [z]</g0l>
+      <z0r>¿Yoooo? Que va. No sé de qué me estáis hablando. No la he escondido en ningún lado. Especialmente no en la [*]buhardilla[/*].</z0r>
+      <set variable="tieneLlave">1</set>
+    </else>
+  </dialogue>
+
+  <dialogue id="1">
+    <g5>¡Ay, madre de dios de la virgen de la bicicleta! ¡Qué buena pinta tenía la tarta!</g5>
+    <g5>¡Un lametón, Flurfy! ¡Uno nada más! ¡Te lo ruego!</g5>
+    <p0i>¡Por última vez! ¡Las consecuencias de cambiar el pasado son impredecibles!</p0i>
+    <p3i>Quizá le das ese lametón y... no sé. A [r] le sale pelo, o algo.</p3i>
+    <g0>Aaaw... Hasta siempre, hermosa. Te veré en mis sueños más dulces.</g0>
+    <p0i>Pero lo más importante es que [*]hace 100 segundos la tarta estaba entera[/*].</p0i>
+    <p0i>Eso limita mucho la ventana para cometer el crimen. Sigamos adelante.</p0i>
+  </dialogue>
+
+  <dialogue id="2">
+    <p3>Un momento... Este es el segundo exacto en el que el cocinero tapa la tarta, y no la vuelve a levantar nunca más.</p3>
+    <g7i>¿Qué?... Pero... ¿pero entonces?</g7i>
+    <g4i>[*]¿Cómo pudieron comerse la tarta?[/*]</g4i>
+    <p2>Examinemos la cocina a conciencia. Aquí hay gato encerrado.</p2>
+    <g7i>¡Uy! Espero que no...</g7i>
+    <set variable="nadie_levanto_tapa">1</set>
+  </dialogue>
+
+  <dialogue id="3">
+    <p3>Uhm... Parece que el pastel aún estaba [?]tapado[/?] a estas alturas.</p3>
+    <p0>Pero eso no significa que siga [*]entero[/*] ahí dentro.</p0>
+    <g4i>¡Ay, qué engorro! ¿De verdad que no podemos levantar un poco la tapa y mirar dentro?</g4i>
+    <g0i>¡Va, un vistacito! ¡Un vistacitín!</g0i>
+    <p0>Catarina, una vez un viajero en el tiempo estornudó en una sopa de ajos.</p0>
+    <p1>Desde entonces tenemos ornitorrincos.</p1>
+    <g7i>... E-entendido.</g7i>
+  </dialogue>
+
+  <dialogue id="4">
+    <p0>Se ve que [o] estaba montando la tarta en el carrito y acabando los muffins al mismo tiempo.</p0>
+    <if condition="oso_apaga_incendio_descubierto">
+      <g7i>Parece que le va a dar un patatús. Y aún no tiene un incendio que apagar...</g7i>
+    </if>
+    <p3i>Este hombre es infatigable.</p3i>
+  </dialogue>
+
+  <dialogue id="5">
+    <p3>Uhm... Nuestro amigo parece bastante agobiado.</p3>
+    <if condition="oso_apaga_incendio_descubierto">
+      <p0>Imagino que tener un incendio en el baño no ayuda.</p0>
+    </if>
+    <if condition="oso_conocido">
+      <g0i>Bueno, ya te conté que se ha encargado de la fiesta prácticamente sólo.</g0i>
+      <g3i>[o] es [*]un perfeccionista empedernido[/*]. Cree que la única forma de que algo salga bien es encargándose él de todo.</g3i>
+      <set variable="oso_perfeccionista">1</set>
+    </if>
+    <else>
+      <g3i>¿[o]? [o] nació estresado. Cuando salió del vientre de su madre se azotó a sí mismo porque el doctor tardaba mucho y tenía cosas que hacer.</g3i>
+      <g0i>Si quieres [i]habla con él[/i] y te lo presento.</g0i>
+    </else>
+  </dialogue>
+
+  <dialogue id="6">
+    <if condition="!incendio_descubierto">
+      <g1>¡Ahí va! ¡Un incendio!</g1>
+      <p2>Y [?]provocado[/?], por lo que parece. La papelera está llena de [?]papel y cerillas usadas[/?].</p2>
+      <g4i>¡Qué vida esta! ¡Nosotros investigando el robo de un pastel y resulta que alguien nos quería a la parrilla!</g4i>
+      <p3>No. Demasiado poco material para ello. Creo que su objetivo era otro. Mira ahí arriba.</p3>
+      <g0i>¿Eh?...... ¡Oh!... ¿[*]La alarma de incendios[/*]?</g0i>
+      <g4i>Quieres decir... ¿que fue una [?]distracción[/?]?</g4i>
+      <p0>Apostaría una caja de galletitas a ello.</p0>
+      <g5i>Uy uy uy, eso ya son palabras mayores, tienes que estar muy seguro.</g5i>
+      <set variable="incendio_descubierto">1</set>
+    </if>
+    <g3i>Y cómo no, el bueno de [o] es el único que se ha dignado a arreglar el follón. Pobre, como no tiene suficiente con lo suyo...</g3i>
+    <set variable="oso_apaga_incendio_descubierto">1</set>
+  </dialogue>
+
+  <dialogue id="7">
+    <p2>Reconozco esos ojos. Son los ojos de un cazador esperando el momento perfecto para saltar a por su presa.</p2>
+    <if condition="incendio_descubierto">
+      <g0i>Pues, por lo pronto, parece que se entretuvo haciendo papiroflexia ¡Mira qué montón de papeles!</g0i>
+      <p1>...[...]!</p1>
+      <p0>En efecto. Papeles... y [*]cerillas[/*]</p0>
+      <g1i>... Eh... ¡Oh!</g1i>
+      <p3>Parece que tenemos a nuestro [?]pirómano[/?]. ¡Gran observación, Catarina!</p3>
+      <g7i>... ¿Que?... ¿Eh?....</g7i>
+      <g3i>¡Ah! Sisisisis, ha sido a propósito, jeje. Madre mía, no se me escapa una.</g3i>
+    </if>
+  </dialogue>
+
+  <dialogue id="8">
+    <if condition="!zorro_usa_llave">
+      <g0>¡Ey! ¡El zorro está entrando en la cocina!</g0>
+      <g4>Pero ¿esta puerta no estaba cerrada?</g4>
+      <p1i>Fíjate en sus manos. Parece que está usando algo.</p1i>
+      <g3>Anda sisisi. Es así como pequeñito y metálico, ¿no?</g3>
+      <p0i>Pequeño, metálico y te abre puertas. Sólo puede ser una cosa.</p0i>
+      <g0>A la de 3.</g0>
+      <g3>¡1!</g3>
+      <p0i>2.</p0i>
+      <g3>¡3!</g3>
+      <p0i>[*]Una llave[/*].</p0i>
+      <g6>¡Dinero!</g6>
+      <p1i>...</p1i>
+      <g4>Vale, sí, una llave.</g4>
+      <p0i>...</p0i>
+      <p0i>... Bueno, razón no te falta.</p0i>
+      <p3i>Ahora [?]averigüemos qué hizo con ella[/?].</p3i>
+      <set variable="zorro_usa_llave">1</set>
+    </if>
+    <else>
+      <p3>Así que por aquí entró a la cocina.</p3>
+      <g7i>Vete tú a saber de dónde sacó la llave ¡Qué zorro que es!</g7i>
+    </else>
+  </dialogue>
+
+  <dialogue id="9">
+    <p2>Y aquí tenemos a nuestro ladrón, in flagrante delito.</p2>
+    <g2i>Qué vueltas nos has hecho dar, desgraciado.</g2i>
+  </dialogue>
+
+  <dialogue id="10">
+    <if condition="!zorro_comio_muffins">
+      <set variable="zorro_comio_muffins">1</set>
+      <p3>¿Hm...? Parece que se está poniendo las botas con esas magdalenas.</p3>
+      <g5i>¡No son magdalenas! ¡Son los famosos muffins de [o]!</g5i>
+      <p0>Lo mismo es.</p0>
+      <g2i>¿Qué? No tienen nada que ver...</g2i>
+      <p2>Y con qué ansia se los traga. Se está llenando la boca de...</p2>
+      <p1>...</p1>
+      <p4>... oh, no.</p4>
+    </if>
+    <else>
+      <p4>¿Tan famosos son estos muffins?</p4>
+      <g3i>¡Vaya si lo son! Fueron portada en el "Oso Goloso" del pasado enero, en el numero 23 de "Oso Sabroso", ...</g3i>
+      <g5i>¡Hasta quedaron en primer puesto en el "Bearbecue Fest"!</g5i>
+      <p2>Y tú las vas enterrando en macetas...</p2>
+      <p3>Aunque no negaré que me sorprende. Nunca hubiera adivinado que pudieras hacerte famoso con unas magdalenas.</p3>
+      <g2i>¡Ay, de verdad Flurfy!</g2i>
+      <g4i>Lames un poco de pólvora y ya sabes dónde la fabricaron, de qué parte del país sacaron el azufre y cómo se llama el vecino del minero.</g4i>
+      <p0>Para ser justos, nadie ha cometido un asesinato con un muffin todavía.</p0>
+      <g3i>Todavía.</g3i>
+    </else>
+  </dialogue>
+
+  <dialogue id="11">
+    <if condition="!zorro_comio_muffins">
+      <g2>¡Mira cómo huye! Con la boca llena de [*]migas[/*], el muy desgraciado.</g2>
+      <p3>Espera... Aquí hay algo raro. Sigamos revisando la sala.</p3>
+    </if>
+    <if condition="!buscar_alcantarilla">
+      <set variable="buscar_alcantarilla">1</set>
+      <g7>Espera espera espera espera espera. ¿Se está marchando? ¿Así, sin más?</g7>
+      <g7>¡Pero si sólo se ha atiborrado a muffins!</g7>
+      <g4>Que a ver, está mal igual. Pero no te meten en la cárcel por ello.</g4>
+      <p0i>Y por el pastel tampoco.</p0i>
+      <g2>¿¡Qué!? ¿¡En serio!? ¿Y entonces qué hago yo siguiéndote a todos lados?</g2>
+      <p3i>El caso ha sufrido un giro inesperado.</p3i>
+      <p0i>Tabula rasa. Es el momento de que abandonemos nuestras preconcepciones.</p0i>
+      <p2i>[*]Démosle un repaso en profundidad a la cocina[/*]. Sé que nos queda una pieza clave por descubrir.</p2i>
+    </if>
+    <else>
+      <g4>... ¡Bueno! ¡Vale! ¡Es inocente!</g4>
+      <g7>....... ¡Pero se comió los muffins! ¡Sigue siendo un asqueroso!</g7>
+      <p1i>Amén.</p1i>
+    </else>
+  </dialogue>
+
+  <dialogue id="12">
+    <if condition="!zorro_migas">
+      <g7>Uiigh. ¡Qué grima me da este hombre!</g7>
+      <p2i>Uhm... ¿Y la boca?</p2i>
+      <g4>¡También, también! No ha visto un cepillo en su vida.</g4>
+      <p3i>No. Que te fijes en la boca.</p3i>
+      <g7>¿Eh? A ver...[...][...]!</g7>
+      <g1>Eso son... ¿[*]migas[/*]?</g1>
+      <p0i>De repostería, me atrevería a decir. Ese polvo fino parece azúcar glass.</p0i>
+      <g2>¡Já! ¡Con las manos en la masa! O bueno, en el pastel, en este caso.</g2>
+      <if condition="llave_en_regalo">
+        <if condition="regalo_en_sala_de_regalos">
+          <g3i>¡Oh! Entonces. Entonces entonces. Entró por la cocina, se comió la tarta y escondió la llave.</g3i>
+          <p3>Y el regalo acabó en la sala de regalos, escondido con el resto. Una aguja en un pajar.</p3>
+          <g6>¡Lo tenemos, Flurfy! ¡Tenemos a nuestro culpable!</g6>
+          <p0i>¡Hm! ¡Ese parásito creyó por un momento que podría escapar de mí, el ángel de la justicia cumpleañeril!</p0i>
+          <p2i>¡Que esto sirva de ejemplo a todos aquellos que osen profanar esta ancestral costumbre!</p2i>
+          <g4>... Vale, prometo no motivarte nunca más.</g4>
+          <p0i>Creo que es el momento de [?]abrir ese condenado regalo[/?].</p0i>
+          <set variable="buscar_regalo">1</set>
+        </if>
+        <else>
+          <g4>Así que para eso querías la llave, ¿eh, caradura?</g4>
+          <g7>Que, por cierto... [?]¿qué fue de ella?[/?]</g7>
+          <p0i>Es una buena pregunta. Averigüémoslo.</p0i>
+        </else>
+      </if>
+      <else>
+        <p0i>Calma. Necesitamos pruebas definitivas si pretendemos cerrar este caso.</p0i>
+        <p3i>A ver si nuestro amigo nos ha dejado [?]más pistas[/?].</p3i>
+      </else>
+      <set variable="zorro_migas">1</set>
+    </if>
+    <else>
+      <g4>¡Ya sabía yo que este tío se había presentado a la fiesta por la comida!</g4>
+      <g2>¡Míralo! ¡Tiene más migas en la boca que un informático en el teclado! ¡Qué aajjjcoo por dios!</g2>
+    </else>
+  </dialogue>
+
+  <dialogue id="13">
+    <g2>¡De verdad, este tío es insufrible!</g2>
+    <z0g>¡Mira con qué cara de superioridad mira a [o]!</z0g>
+    <if condition="!zorro_migas">
+      <p4i>¿Qué está haciendo con el brazo?</p4i>
+      <g3>Yo qué sé ¿[*]Frotarse los morros[/*]? Ya podría hacerlo con un rallador de queso, que seguro que acaba más guapo.</g3>
+      <p1i>Hmm...</p1i>
+    </if>
+    <else>
+      <g2i>¡Encima de que nos roba la merienda, se cachondea!</g2i>
+      <g7i>¿De verdad que no podemos pegarle una patada? Ahora que no puede defenderse.</g7i>
+      <p0>¡Otra vez con lo mismo! Ya te he dicho que no se puede tocar nada cuando viajas atrás en el tiempo.</p0>
+      <g4i>Jo...</g4i>
+      <p2>Si eso, lo pillamos en el presente y le damos una paliza.</p2>
+      <g1i>!</g1i>
+      <g6i>¡Madre mía Flurfy! ¡Si al final vas a ser un tío enrollado y todo!</g6i>
+    </else>
+  </dialogue>
+
+  <dialogue id="14">
+    <if condition="buscar_regalo">
+      <if condition="consejo_katty_investigar_zorro">
+        <g2>¿Ves? ¿Ves ves ves ves? Te dije que este tío estaría maquinando algo.</g2>
+      </if>
+      <else>
+        <g2>¡Sabía que este tío no traería nada bueno!</g2>
+      </else>
+      <p0i>Tu intuición no te ha fallado. Parece que tienes una... inteligencia social... apropiada...</p0i>
+      <g6>¡Ey, buen intento Flurfy! ¡A la próxima seguro que te sale un cumplido de verdad!</g6>
+      <p3i>S-Silencio, hay un caso que cerrar.</p3i>
+    </if>
+    <else>
+      <g2>¡Flurfy! ¡Muy atento a este tío! ¡Seguro que ha hecho algo!</g2>
+      <p0i>¿El qué?</p0i>
+      <g7>¡No sé! ¡Algo! Conozco telares que han tramado menos cosas que él.</g7>
+      <p2i>Hmmm... [z], ¿verdad? Si su fama le precede quizá sea buena idea [?]empezar la investigación por él[/?].</p2i>
+      <set variable="consejo_katty_investigar_zorro">1</set>
+    </else>
+  </dialogue>
+
+  <dialogue id="15">
+    <if condition="!llave_en_regalo">
+      <if condition="!zorro_usa_llave">
+        <p3>Uhm... ¿Qué está haciendo el zorro con el regalo?</p3>
+        <g7i>¿A ver?... Uhm... Parece que está [?]metiendo algo pequeño[/?] por uno de los huecos de la caja.</g7i>
+        <g4i>Pero no consigo ver muy bien el qué, la está escondiendo muy bien.</g4i>
+        <g7i>Es... ¿[*]metálico[/*], parece? No sé.</g7i>
+        <p3>Impresionante. Tiene una habilidad con las manos digna de un prestidigitador. Ni completamente quieto veo su truco.</p3>
+        <g4i>¿Qué hacemos entonces?</g4i>
+        <p0>Hhm... Sigámosle la pista. Si averiguamos qué ha podido esconder, [?]volvamos aquí[/?].</p0>
+      </if>
+      <else>
+        <set variable="llave_en_regalo">1</set>
+        <p3>Uhm... ¿Qué está haciendo el zorro con el regalo?</p3>
+        <g7i>¿A ver?... Uhm...Parece que está [?]metiendo algo pequeño[/?] por uno de los huecos de la caja.</g7i>
+        <g0i>... ¡Hey! ¡Espera! Ese color y ese brillo... ¡Creo que es [*]la llave[/*]!</g0i>
+        <p2>¡Este hombre no conoce el honor! ¡Una cosa es deshacerse de pruebas y otra intentar incriminar a un tercero de semejante forma! </p2>
+        <if condition="zorro_migas">
+          <if condition="regalo_en_sala_de_regalos">
+            <g3i>¡Oh! Entonces. Entonces entonces. Entró por la cocina, se comió la tarta y escondió la llave.</g3i>
+            <p3>Y el regalo acabó en la sala de regalos, escondido con el resto. Una aguja en un pajar.</p3>
+            <g6>¡Le tenemos, Flurfy! ¡Tenemos a nuestro culpable!</g6>
+            <p0i>¡Hm! ¡Ese parásito creyó por un momento que podría escapar de mí, el ángel de la justicia cumpleañeril!</p0i>
+            <p2i>¡Que esto sirva de ejemplo a todos aquellos que osen profanar esta ancestral costumbre!</p2i>
+            <g4>... Vale, prometo no motivarte nunca más.</g4>
+            <p0i>Creo que es el momento de [?]abrir ese condenado regalo[/?].</p0i>
+            <set variable="buscar_regalo">1</set>
+          </if>
+          <else>
+            <g6i>¡Pues ya está! ¡Caso cerrado!</g6i>
+            <p3>No, aún no. Antes debemos [?]recuperar la llave[/?]. Es la prueba clave del caso.</p3>
+            <g4i>¡Ay, de verdad, no me das ni una alegría! Y yo que ya estaba pensando en qué modelito ponerme para la foto del periódico.</g4i>
+          </else>
+        </if>
+        <elif condition="regalo_en_sala_de_regalos">
+          <g3i>Bueno, pues nada. Vamos a la sala de regalos y recuperamos la llave ¿no?</g3i>
+          <p3>No es tan sencillo.</p3>
+          <g0i>¿Cómo que no? Te recuerdo que tengo uñas. Hago así..., *ras* *ras*, y regalo abierto. ¡Sencillo!</g0i>
+          <p1>... No me refiero al proceso de abrirlo. Me refiero a la justificación.</p1>
+          <p0>Tenemos que encontrar [?]algún indicio de que lo que quiera que Felipe hiciera en la cocina está relacionado con el caso[/?].</p0>
+          <g7i>... Total, pegarnos otra vez a su culo para ver qué hace.</g7i>
+          <p0>¡Protocolo, Catarina! ¡Ante todo protocolo!</p0>
+          <g4i>Vaaaaaleeeee...</g4i>
+        </elif>
+        <else>
+          <g7i>¿Pero qué hizo este tío ahí dentro como para intentar echarle la culpa a otro?</g7i>
+          <p3>Já. Ya empiezas a pensar como un detective. Averigüémoslo.</p3>
+        </else>
+      </else>
+    </if>
+    <else>
+      <g7>Me sigue pareciendo muy feo que intentara echarle el muerto a otro.</g7>
+      <g4>¡Ay, de verdad! ¡Todos los zorros son iguales! Cuando iba al colegio, uno llamado Jordi me acusó de haberle copiado los deberes.</g4>
+      <p3i>¿Jordi? Porras. Qué nombre más extraño.</p3i>
+      <p1i>En todo caso, lamento que mintiera sobre ti.</p1i>
+      <g3>No no, si era verdad. Me copié bastísimo. Una cosa exagerada ¡Pero me fastidia que fuera por ahí contándolo!</g3>
+      <p2i>Estoy empezando a pensar que el pastel te lo has comido tu.</p2i>
+    </else>
+  </dialogue>
+
+  <dialogue id="16">
+    <if condition="!hipo_conocido">
+      <p4>No recuerdo haber visto a este chico.</p4>
+      <g3i>¡Ah! ¡Pues es [h]! Volvamos a la fiesta y [?]te lo presento[/?].</g3i>
+    </if>
+    <else>
+      <p3>¿Crees que [h] podría haber cometido el crimen?</p3>
+      <g1i>¿Quéééééééééééé?</g1i>
+      <g4i>¡Ni de coña! Vaya, ni en un millón de años. Antes sospecharía de la madre Teresa de Catculta.</g4i>
+      <g3i>¡Es demasiada buena persona! Le he visto tropezarse con muebles y pedir disculpas.</g3i>
+      <g0i>Además, ya has visto que se estresa con nada.</g0i>
+      <g3i>No ha hecho una bolsa de palomitas en su vida porque tiene miedo a sacarlas demasiado pronto y que las que no peten se lleven una desilusión.</g3i>
+      <g0i>¿Un crimen? Ni en broma, vaya.</g0i>
+      <p1>Una vez yo también llegué a confiar tan ciegamente en alguien. Algún día te darás cuenta de tu error.</p1>
+      <g0i>Vaya vaya, suena a historia de abuelo cebolleta.</g0i>
+      <p0>Otro día. En marcha.</p0>
+      <g4i>Pff... Para dejarme con la intriga no me digas nada...</g4i>
+    </else>
+  </dialogue>
+
+  <dialogue id="17">
+    <set variable="hipo_en_banyo">1</set>
+    <p3>[h] se ha metido en el baño...</p3>
+    <g2i>¡No! ¡Flurfy! ¡NO! ¡Caca! ¡Perro malo! ¡No mires ahí dentro!</g2i>
+    <p1>... No tenía intención de hacerlo...</p1>
+    <if condition="incendio_descubierto">
+      <p3>Aunque me sorprende que se meta en un baño con una papelera en llamas al lado...</p3>
+      <g3i>Cuando la naturaleza llama...</g3i>
+      <p0>Permíteme cortar la conversación inmediatamente.</p0>
+    </if>
+  </dialogue>
+
+  <dialogue id="18">
+    <if condition="!hipo_conocido">
+      <p3>No recuerdo haber visto a este chico.</p3>
+      <g3i>¡Ah! ¡Pues es [h]! Volvamos a la fiesta y [?]te lo presento[/?].</g3i>
+    </if>
+    <else>
+      <p3>Parece que [h] está cargando con el regalo.</p3>
+      <g5i>¡Aaaaaw! ¡Ya te dije que era buena gente!</g5i>
+      <g3i>¡Se ha dado cuenta de que había un regalo fuera de la [?]sala de regalos[/?] y lo está dejando en su sitio! Qué atento es este chico.</g3i>
+    </else>
+  </dialogue>
+
+  <dialogue id="19">
+
+    <if condition="!regalo_en_sala_de_regalos">
+      <set variable="regalo_en_sala_de_regalos">1</set>
+      <if condition="llave_en_regalo">
+        <p0>Parece que el regalo acabó en la [?]sala de regalos[/?].</p0>
+        <if condition="zorro_migas">
+          <g3i>¿Pues no seremos los amos? Encontramos un sospechoso, le vemos hacer fechorías y obtenemos pruebas contra él.</g3i>
+          <g6i>¡Lo hemos hecho de manual! ¡Pasito a pasito! ¡Choca esas cinco!</g6i>
+          <p1>.....</p1>
+          <g0i>No me dejes colgada, Flurfy...</g0i>
+          <p1>.....</p1>
+          <p0>..... *suspiro*</p0>
+          <i>[p] le choca la mano a [g]</i>
+          <g5i>¡Aaaaay! Jajajaja. ¡Si al final no vas a ser un muermo!</g5i>
+          <p2>¿Cómo que un muermo? ¡Desagradecida! ¡Devuélveme ese choque ahora mismo!</p2>
+          <g6i>¡No! ¡Ya lo he chupado! ¡Bwahahahaha!</g6i>
+          <p1>Maldita sea. La culpa es mía por bajar la guardia.</p1>
+          <p0>Venga, dejemos de perder el tiempo y [*]recuperemos esa llave[/*].</p0>
+          <set variable="buscar_regalo">1</set>
+        </if>
+        <else>
+          <g0i>¡A tope! Pues vamos a abrirlo, ¿no?</g0i>
+          <p1>No es tan sencillo.</p1>
+          <g0i>¿Cómo que no? Te recuerdo que tengo uñas. Hago así... *ras* *ras* y regalo abierto. ¡Sencillo!</g0i>
+          <p1>... No me refiero al proceso de abrirlo. Me refiero a la justificación.</p1>
+          <p0>Tenemos que encontrar [?]algún indicio de que lo que quiera que Felipe hiciera en la cocina está relacionado con el caso[/?].</p0>
+          <g7i>... Total, pegarnos otra vez a su culo para ver qué hace.</g7i>
+          <p0>¡Protocolo, Catarina! ¡Ante todo protocolo!</p0>
+          <g4i>Vaaaaaleeeee...</g4i>
+        </else>
+      </if>
+      <else>
+        <g1>¡Hey, [h] está guardando un regalo en la [?]sala de regalos[/?]!</g1>
+        <p3i>Le veo fatigado. Habrá venido corriendo. Al fin y al cabo la fiesta está a punto de empezar...</p3i>
+      </else>
+    </if>
+    <else>
+      <p4>¿Por qué son todos los regalos tan parecidos?</p4>
+      <g3i>Bueno, es que [o] es muy bueno envolviéndolos y claro, sólo queremos lo mejor para el cumpleañero...</g3i>
+      <p2>Total que le habéis echado el muerto a él.</p2>
+      <g4i>Nooooooooooooo....... quizá.</g4i>
+    </else>
+  </dialogue>
+
+  <dialogue id="20">
+    <if condition="!sapa_llego_sin_regalo">
+      <set variable="sapa_llego_sin_regalo">1</set>
+      <p0>Parece que [s] llegó a última hora.</p0>
+      <g3i>Sí. Unos castores montaron una presa en el lugar equivocado y causaron un atasco de la leche.</g3i>
+      <p2>Hoy en día le dan las licencias de obra pública a cualquier incompetente.</p2>
+      <p3>Pero lo más importante es que viene [*]con las manos completamente vacías[/*]</p3>
+      <g0i>Supongo que no tuvo nada que ver con el regalo, al final.</g0i>
+    </if>
+    <else>
+      <p2>Qué mala educación, venir sin regalo a un cumpleaños. Hasta yo he traído uno.</p2>
+      <g0i>Ah, ¿sí? ¿Y qué le has regalado?</g0i>
+      <p0>Una corbata. Gris.</p0>
+      <g0i>Woah, estaba preparada para la respuesta más aburrida posible y, aún así, te has superado.</g0i>
+      <g3i>No sé si impresionarme o dormirme.</g3i>
+      <p0>...</p0>
+      <g0i>¿Qué haces en el cumpleaños, por cierto?</g0i>
+      <p1>Hace unos días resolví un caso para los padres de [c] y me invitaron como agradecimiento.</p1>
+      <p3>No sé cómo averiguaron que me gustan las fiestas de cumpleaños...</p3>
+      <g0i>Oooye pues ni ideeea... con lo sutil que eres...</g0i>
+    </else>
+  </dialogue>
+
+  <dialogue id="21">
+    <g5i>¡Míralas que monas las dos en la barquita!</g5i>
+    <g7i>Ojalá me llevara tan bien con mis hermanas...</g7i>
+  </dialogue>
+
+  <dialogue id="22">
+    <set variable="llegaron_barca_con_regalo">1</set>
+    <g0>¡Hey! ¡Mira! ¡Son [r] y [s] llegando en barca!</g0>
+    <p4i>Pero...Pero son una rana y una sapa. Podrían ir pefectamente nadando...</p4i>
+    <g3>¡Qué poca clase que tienes, Flurfy! ¡La gente rica está por encima de cosas triviales como usar las piernas!</g3>
+    <if condition="!tienes_remos">
+      <g5>De hecho me están dando ganas de probarla...¡Quién tuviera unos [*]remos[/*]!</g5>
+    </if>
+    <if condition="!regalo_de_rana">
+      <p3i>Hm...Parece que [*]llevan un regalo[/*]. Me pregunto de quién de las dos será.</p3i>
+    </if>
+  </dialogue>
+
+  <dialogue id="23">
+    <g0>¡Es [s]! ¡Qué vibras de hermana mayor que da!</g0>
+    <p0i>¿Crees que podría estar implicada en el caso?</p0i>
+    <g7>Pues no lo sé, pero si las miradas mataran tendríamos un crimen más serio entre manos...</g7>
+    <p0i>Disiento.</p0i>
+  </dialogue>
+
+  <dialogue id="24">
+    <p3>Parece que [s] ha dejado el [*]regalo[/*] aquí...</p3>
+    <g5i>¡Wow, llevando un regalo tan pesado y [?]unos remos[/?] a la vez. ¡Qué fuerza que tiene la tía!</g5i>
+    <if condition="!regalo_de_rana">
+      <p2>Mmmm...Me pregunto por qué dejar el regalo tan lejos y no en la [?]sala de regalos[/?].</p2>
+    </if>
+  </dialogue>
+
+  <dialogue id="25">
+    <if condition="!remos_en_armario">
+      <set variable="remos_en_armario">1</set>
+      <g0>¡Mira! ¡[s] está dejando unos [*]remos[/*] en esa taquilla!</g0>
+      <p0i>Hmmm...Si fuera necesario podríamos tomarlos prestados.</p0i>
+      <g6>¡Y sin ser necesarios también! ¡Venga va!</g6>
+      <p0i>No.</p0i>
+      <g0>¡Ni siquiera tienes por qué cogerlos tú! ¡Puedo hacerlo yo!</g0>
+      <p0i>No.</p0i>
+      <g6>¡Tú dame la orden y en un santiamén estaremos dejando atrás esta aburrida vida de tartas perdidas y sueños rotos para convertirnos en piratas!</g6>
+      <p0i>No.</p0i>
+      <g7>Te odio.</g7>
+    </if>
+    <else>
+      <g5>¿Has cambiado de opinión respecto a lo de ser pirata?</g5>
+      <p0i>No.</p0i>
+      <g4>¿La de pasártelo bien te la sabes?</g4>
+    </else>
+  </dialogue>
+
+  <dialogue id="26">
+    <if condition="!sapa_guardo_llave_en_abrigo">
+      <set variable="sapa_guardo_llave_en_abrigo">1</set>
+      <p3>[s] está dejando su mochila en el perchero...</p3>
+      <p2>¿Eh?...Parece que está guardando una [*]llave[/*] en uno de los bolsillos.</p2>
+      <g5i>¡Ay! ¡Mira como brilla! ¡La quiero! ¡Vamos, seguro que sigue ahí!</g5i>
+      <p0>...¿Tus padres eran cuervos?</p0>
+      <g5i>¡Venga venga enrollate! [?]Volvemos al presente[/?] y nos la llevamos.</g5i>
+    </if>
+    <else>
+      <g0>¿Puedes apuntar en ese cuaderno tuyo que tengo que preguntarle a [s] dónde compró esta mochila?</g0>
+      <p0i>Este cuaderno es sólo para temas importantes.</p0i>
+      <g3>Pues por eso.</g3>
+    </else>
+  </dialogue>
+
+  <dialogue id="27">
+    <g5>¡Es [r]! ¡Qué mona que va esta chica siempre!</g5>
+    <p2i>¿Crees que podría estar implicada en el caso?</p2i>
+    <g3>¡Pues seguramente, porque no parece nada sospechosa!</g3>
+    <p0i>Las cosas no funcionan así. No estamos en una película de detectives...</p0i>
+    <g0>No, en una película no...</g0>
+  </dialogue>
+
+  <dialogue id="28">
+    <g2>NO. FLURFY. NO.</g2>
+    <p1i>No sé en qué estás pensando, pero no tenía intención de hacerlo...</p1i>
+  </dialogue>
+
+  <dialogue id="29">
+    <if condition="!tienes_remos">
+      <if condition="tienes_llave_armario">
+        <if condition="remos_en_armario">
+          <set variable="tienes_remos">1</set>
+          <g6>¡Vamos a llevarnos los remos! ¡Vamos a llevarnos los remos!</g6>
+          <p0i>No. Si necesitamos [?]ir a la isla[/?] podemos ir tranquilamente nadando, no necesitamos ninguna barca.</p0i>
+          <g7>*Gasp* ¿Nadando? ¿Te das cuenta de que soy una gata, verdad? ¿Le harías algo así a una señorita como yo?</g7>
+          <p2i>...</p2i>
+          <p1i>......</p1i>
+          <p0i>Bueno. Supongo que si es sólo para eso, no hay problema.</p0i>
+          <g6>¡BIEEEEN! ¡Aventura pirata!</g6>
+          <p0i>¡No! Si vamos a usar la barca es para fines estrictamente relacionados con el caso ¿Entendido?</p0i>
+          <g1>¿Y lo bien que te sentaría un parche?</g1>
+          <p1i>...</p1i>
+          <p3i>...¿Tu crees?</p3i>
+          <p0i>...¡No! Centrémonos en el caso de una vez.</p0i>
+          <g3>La próxima cae, Katty. Sólo le hace falta un pequeño empujón.</g3>
+        </if>
+        <else>
+          <g6>¡ABRE ABRE ABRE ABRE!</g6>
+          <p2i>No te precipites ¿Qué ocurriría si dentro hubiera...no sé, una bomba que se activa al abrir la puerta?</p2i>
+          <g0>Moriríamos los dos.</g0>
+          <g3>Y habría merecido la pena.</g3>
+          <p0i>¿Y por qué no, por el mismo precio, [?]usamos tus poderes[/?] y nos evitamos un susto?</p0i>
+          <g4>Pues mira, me he equivocado. Sólo moriría yo porque tú ya estás muerto por dentro.</g4>
+        </else>
+      </if>
+      <else>
+        <g6>¡ABRE ABRE ABRE ABRE!</g6>
+        <p0i>Imposible. Está [*]cerrado con llave[/*].</p0i>
+        <g3>No hay puerta cerrada de más, sino fuerza aplicada de menos.</g3>
+      </else>
+    </if>
+    <else>
+      <g7>Ya podría haber secado los remos antes de guardarlos. Está todo chorreando...</g7>
+    </else>
+  </dialogue>
+
+  <dialogue id="30">
+    <g0>¡Ay! Qué ganas me están entrando de rascar este perchero.</g0>
+    <p0i>¿Hay algún mueble en esta casa que no quieras rascar?</p0i>
+    <g0>...</g0>
+    <g7>Nadie te ha dado derecho a tener tanta razón.</g7>
+  </dialogue>
+
+  <dialogue id="31">
+    <if condition="!tienes_llave_armario">
+      <if condition="sapa_guardo_llave_en_abrigo">
+        <set variable="tienes_llave_armario">1</set>
+        <i>Has obtenido una [*]llave de taquilla[/*]</i>
+      </if>
+      <else>
+        <g0>¡Hey! ¡Es la mochila de [s]! ¡Vamos a curiosear un poco!</g0>
+        <p2i>¡No pienso registrar una propiedad privada sin un buen [?]motivo[/?]!</p2i>
+        <p0i>¿Te gustaría que alguien rebuscara en tus cosas mientras no estás presente?</p0i>
+        <g3>Hombre, si fuera yo la que rebuscara, no me importaría.</g3>
+        <p4i>¿Qué quieres decir? ¿En el sentido de que si fueran las cosas de otra persona y las registraras tú?</p4i>
+        <p4i>¿O en el sentido de que las cosas son tuyas y las registras tú misma?</p4i>
+        <g0>En el sentido de que las cosas son mías y las registra otra persona, que soy yo.</g0>
+        <p3i>Claro, pero es que entonces no hay otra persona.</p3i>
+        <g3>Si que hay otra persona, soy yo.</g3>
+        <p0i>No digo tú, digo la otra persona. La otra persona tiene que ser otra persona que no seas tú.</p0i>
+        <g7>¿Pero a ver, entonces la mochila es mía?</g7>
+        <p0i>Claro.</p0i>
+        <g3>Ah, pues si es mía no la registro, que entonces ya sé lo que hay dentro.</g3>
+        <p1i>No sé como hemos llegado a este punto pero estoy conforme con el resultado.</p1i>
+      </else>
+    </if>
+    <else>
+      <i>No hay nada útil.</i>
+    </else>
+  </dialogue>
+
+  <dialogue id="32">
+    <g5>¡Aaaaala! ¡Qué regalo más grande!</g5>
+    <p0i>Bueno, el tamaño de la caja no tiene por qué ir a la par con el valor del regalo.</p0i>
+    <p3i>Hay grandes regalos que van en cajas pequeñas. Un anillo de diamantes, la promesa de un amor eterno, va en una caja diminuta.</p3i>
+    <p0i>De hecho, ya que estamos, jovencita, deja que te diga que lo material no es importante. Son los sentimientos detrás de...</p0i>
+    <p0i>...</p0i>
+    <p1i>...</p1i>
+    <p0i>...Vale, por un momento he olvidado que eras una gata.</p0i>
+    <g5>¡¡¡¡¡¡CAJA GRANDE!!!!!</g5>
+  </dialogue>
+
+  <dialogue id="33">
+    <if condition="!tienes_llave_armario">
+      <g1>¡Ahí va! ¡Un incendio!</g1>
+      <p2>Y [?]provocado[/?], por lo que parece. La papelera está llena de [?]papel y cerillas usadas[/?].</p2>
+      <g4i>¡Qué vida esta! ¡Nosotros investigando el robo de un pastel y resulta que alguien nos quería a la parrilla!</g4i>
+      <p3>No. Demasiado poco material para ello. Creo que su objetivo era otro. Mira ahí arriba.</p3>
+      <g0i>¿Eh?......¡Oh!...¿[*]La alarma de incendios[/*]?</g0i>
+      <g4i>Quieres decir...¿Que fue una [?]distracción[/?]?</g4i>
+      <p0>Apostaría una caja de galletitas a ello.</p0>
+      <g5i>Uy uy uy eso ya son palabras mayores, tienes que estar muy seguro.</g5i>
+      <set variable="incendio_descubierto">1</set>
+    </if>
+    <else>
+      <i>La papelera está en llamas.</i>
+    </else>
+  </dialogue>
+
+  <dialogue id="34">
+    <i>La papelera está llena de cenizas y espuma.</i>
+  </dialogue>
+
+  <dialogue id="35">
+    <!--EMPTY-->
+    <g1>¿Ala, y esa alcantarilla?</g1>
+  </dialogue>
+
+  <dialogue id="36">
+    <!--EMPTY, EX-RIO PASADO-->
+  </dialogue>
+
+  <dialogue id="37">
+    <!--EMPTY, EX-RIO PRESENTE-->
+  </dialogue>
+
+  <dialogue id="38">
+    <p0>Vaya, estoy impresionado. [c] ha recibido un montón de regalos.</p0>
+    <g0i>Más de la mitad los ha hecho él y están completamente vacíos. O tienen dibujos de sí mismo levantando pesas desproporcionadamente grandes.</g0i>
+    <g3i>Según él "es la mejor forma de incentivar un mercado competitivo".</g3i>
+    <p2>¿Qué clase de manipulación es esa? ¡Vaya afrenta a los cumpleaños!</p2>
+    <g3i>Nah, cuando conoces a Steve sabes que no te puedes creer la mitad de lo que dice.</g3i>
+    <g4i>¿Cuántos somos? ¿Siete? Y la mitad no quieren estar aquí.</g4i>
+    <g7i>Creo que en el fondo lo hace por sentirse menos solo.</g7i>
+    <set variable="steve_se_siente_solo">1</set>
+  </dialogue>
+
+  <dialogue id="39">
+    <if condition="buscar_regalo">
+      <if condition="permiso_para_abrir_regalos">
+        <set variable="tienes_llave_sala_maquinas">1</set>
+        <i>Buscáis el regalo de [r] entre el montón</i>
+        <g7>Vamos a ver...Este no, este no...</g7>
+        <g2>¡Ah! ¡Aquí está! ¡Qué por saco has dado, condenado!</g2>
+        <g0>A ver, voy a intentar sacarlo por el ladito con las uñas, sin estropear la caja.</g0>
+        <i>Obtienes [*]llave de la cocina[/*]. La caja queda total y absolutamente inutilizada.</i>
+        <g3>......Bueno mira, hemos cumplido la mitad de los objetivos. Podría haber salido peor.</g3>
+        <p0i>...</p0i>
+      </if>
+      <else>
+        <g6>¡Pues venga! ¡A buscar el regalo!</g6>
+        <p0i>No no no ¡Espera! ¡QUIETA!</p0i>
+        <g4>¿QUÉEEEeeee? ¡Pero si ya hemos demostrado que está relacionado con el caso! ¡Déjame abrirlo de una vez!</g4>
+        <p1i>¡Es el regalo de otra persona! ¡Es SU cumpleaños! ¡No podemos abrirlo así como así!</p1i>
+        <if condition="steve_se_siente_solo">
+          <p3i>¡Tú misma me has dicho que la gran mayoría de los regalos son falsos! ¿De verdad le quieres privar de la ilusión de abrir uno de los pocos reales?</p3i>
+          <g7>...</g7>
+          <g7>...</g7>
+          <g6>...¡Ay, Flurfy! Cómo me alegro. Tienes tu corazoncito después de todo.</g6>
+          <p1i>...</p1i>
+          <g0>Venga, me has convencido. [?]Vamos a pedirle permiso[/?].</g0>
+        </if>
+        <else>
+          <g7>...</g7>
+          <g7>...Eh. Supongo que tienes razón.</g7>
+          <p0i>Vamos a [?]pedirle permiso[/?] y volvemos ¿Vale?</p0i>
+          <g4>Tú mandas, jefe...</g4>
+        </else>
+      </else>
+    </if>
+    <else>
+      <g5>¡Alaaaa que montón de regalos! ¡Abramos alguno, seguro que no lo echan en falta!</g5>
+      <p2i>¡Me insultas, Catarina! Dios sabe que el cumpleaños es el hábito más sagrado que existe.</p2i>
+      <p0i>¡No voy a profanarlo abriendo los regalos de otro si no tengo [?]una buena razón[/?] para hacerlo!</p0i>
+      <g3>Bueno...¡Pues que los abra él y ya está!</g3>
+      <p2i>¿Sin soplar las velas? Tu falta de respeto por el protocolo no conoce límites.</p2i>
+      <g4>¡Pero si sólo es un deseo!</g4>
+      <p2i>¡Y suerte tienes de que sea el suyo, porque si fuera el mío sería que te callaras de una vez! ¡Vámonos!</p2i>
+      <g7>Vale vale tranquilo...</g7>
+    </else>
+  </dialogue>
+
+  <dialogue id="40">
+    <g3>Y con esto queda demostrado que la única forma de conseguir que [c] se esté quieto es parando el tiempo.</g3>
+    <p3i>Parece que se pasó todo el rato con los [?]ojos vendados[/?]. Su valor como testigo será reducido.</p3i>
+  </dialogue>
+
+  <dialogue id="41">
+    <!--FINISH-->
+    <if condition="!cumpleanyero_conocido">
+      <g0>*Suspiro* Vale, Flurfy. Presta atención. El cumpleañero es una persona un poco complicada. Déjame a mi llevar la conversación ¿vale?</g0>
+      <g3>*Ehem*...¡Bueno bueno bueno pero si tenemos a nuestro cumpleañero!</g3>
+      <c0g>Este es [c=c]Esteban[/c] y...</c0g>
+      <c0i>[ds]¡Perdona que te interrumpa, Katty, pero aquí el único con autoridad para presentarme es [xl][b]EL MENDA![/b][/xl]</c0i>
+      <g4>[xs][ -][i]Oh no[/i][/ -][/xs]</g4>
+      <c6i>¡No sé de qué Esteban estáis hablando!\nAquí la única persona a la que yo veo es a...</c6i>
+      <c5i>[xxxxl][~~~][~~]STEVE[/~~][/~~~][/xxxxl]</c5i>
+      <p2>Te acabo de conocer y ya te odio.</p2>
+      <c0i>¡Muy bien, Katty! ¿Qué tienes que decir del maravilloso Steve?</c0i>
+      <c1>¡Uy uy uy, qué NO decir de Steve! ¡Es la persona más atractiva, inteligente y guay de esta sala!</c1>
+      <g7i>¡¿Cuándo has tenido tiempo a hacer una máscara?!</g7i>
+      <c1>¡Y además tiene ese aquél de chico malo, sabes? La Interpol le busca en 15 países por estar demasiado bueno.</c1>
+      <c1>Puedo confirmar sin miedo a equivocarme que es el chara azul más elegante del mundo...¡Y parte del extranjero!</c1>
+      <g4i>¡Basta ya con lo de ser un chara! ¡Todos sabemos que eres un herrerillo capuchino y que te pintas la cara de azul todos los dias!</g4i>
+      <c5>¡Lo siento, no he podido oírte! ¡Mis gigantescos músculos hacen demasiado ruido!</c5>
+      <g2i>[xxl]¡¡Si vas a mandarme a callar al menos que sea con algo con sentido!![/xxl]</g2i>
+      <p0>Esteban, ¿has visto algo sos-</p0>
+      <c4i>Aquí no hay ningún Esteban. Aquí solo está [xxxxl][~~~][~~]STEVE[/~~][/~~~][/xxxxl]</c4i>
+      <p0>...</p0>
+      <p1>...[xxs][~~~][~~]STEVE[/~~][/~~~][/xxs][...]...¿Has visto algo sospechoso?</p1>
+      <c4i>¿Qué voy a ver, Si me habéis traido aquí [?]con los ojos vendados[/?]? Literalmente no he visto nada desde hace 10 minutos.</c4i>
+      <c6i>¡Pero bueno! No te preocupes por el tema del pastel y tal ¡No me importa haberme quedado sin él! Eso son cosas de niños.</c6i>
+      <g0>Si, ahora te haces el duro, pero te he visto aguantar las lágrimas con todas tus fuerzas.</g0>
+      <c5i>¡Perdona que te diga pero eso es porque me dolía la cara de ser tan guapo!</c5i>
+      <c3i>No sabéis lo que es vivir con dolor crónico.</c3i>
+      <p2>Vámonos, por favor. Me está entrando una migraña sólo de oírle.[/ds]</p2>
+      <set variable="cumpleanyero_conocido">1</set>
+    </if>
+    <else>
+      <if condition="buscar_regalo">
+        <p0>Aquí estamos...</p0>
+        <g0i>Vale, Flurfy. Este va a ser nuevo desafío más grande hasta el momento. Sólo podremos salir victoriosos si unimos fuerzas.</g0i>
+        <p0>Tal y como lo hemos planeado...[?]La única forma de salir de un río bravo es siguiendo la corriente[/?]. ¿Lista?</p0>
+        <g0i>Preparada ¡Vamos!</g0i>
+        <i>[p] y [g] se acercan a [c].</i>
+        <p0>...[xxl][~~~][~~]STEVE[/~~][/~~~][/xxl][...]</p0>
+        <c0i>Aquí no hay ningún Esteb...¿Eh? Ah. Bien, bien. Uh. D-dime.</c0i>
+        <g0>Tenemos un favor que pedirte.</g0>
+        <c5i>¡Ah! ¡Como todo el mundo! ¡No temáis, amigos mios! ¡Pedid y el gran [xxxxl][~~~][~~]STEVE[/~~][/~~~][/xxxxl] proveedrá!</c5i>
+        <p0>¿Podríamos abrir uno de tus regalos?</p0>
+        <c0i>No.</c0i>
+        <g0>A tope con el proveedor.</g0>
+        <p0i>Creemos que uno de los regalos tiene una fuerte conexión con el caso.</p0i>
+        <g3>Pero fuerte fuerte, ¿eh? Fuerte en plan tú.</g3>
+        <c5i>[xxxl]Wow.[/xxl][....][xxs]Wow eso es mucha fuerza.[/xxs]</c5i>
+        <g2>¡Sin tu intervención, este enigma quedará hundido en las tinieblas para siempre!</g2>
+        <p0i>Eres el único que puede sacarnos de este aprieto. ¿Podrías ser tan magnánimo?</p0i>
+        <c3>...Uh...Bueno...Sí...Supongo...Vale...</c3>
+        <p0i>¡Magnífico! ¡Le haremos saber cuando canten odas sobre usted! ¡Hasta entonces no le robamos más tiemp-</p0i>
+        <c0>¿De quién es el regalo?</c0>
+        <p1i>Ah...Uh...</p1i>
+        <if condition="regalo_de_rana">
+          <set variable="permiso_para_abrir_regalos">1</set>
+          <g7>Ehm...Pues...</g7>
+          <p4i>...Vendría...Vendría a ser de [r].</p4i>
+          <c0>...</c0>
+          <c4>...¡Esa sucia rata traicionera!</c4>
+          <p0i>Oh no.</p0i>
+          <g3>Pero ella no tiene por qué haber hecho nada malo, ¿eh? ¿Verdad Flurfy?</g3>
+          <p3i>¿Q-Qué? ¡Oh! No. No no no no. Seguro que le ha caído de rebote. O algo.</p3i>
+          <c0>¡Gracias, chicos! ¡Vosotros si que sois amigos de verdad!</c0>
+          <g7i>Ay no.</g7i>
+          <c6>¡No como esa desgraciada que no me tiene ninguna estima! ¡Seguro que es la persona que más me odia del mundo!</c6>
+          <p0i>Noooo...</p0i>
+          <c5>¡Ahora marchad! [*]Sois libres de abrir el regalo de esa víbora[/*]. ¡Cuidado, no vaya a ser que tenga veneno dentro!</c5>
+          <c4>¡Y no os preocupéis! ¡Mi venganza será como una normal pero cien veces más guapa y fuerte! Será una...Una...</c4>
+          <c5>UNA [xxxxl][~~~][~~]STEVENGANZA[/~~][/~~~][/xxxxl]</c5>
+          <g4i>...Flurfy, creo que la hemos liado.</g4i>
+          <p1i>Estoy muy viejo para estas cosas...</p1i>
+        </if>
+        <else>
+          <g7>Ehm...Pues...Francamente, ni idea.</g7>
+          <c0i>...</c0i>
+          <c0i>...¿Acaso estáis intentando robarme los regalos?</c0i>
+          <p4>¿¡Qué!? ¡No! ¡Nada más lejos de la realidad!</p4>
+          <c4i>¡Largo de mi vista!</c4i>
+          <g4>¡Casi lo teníamos, Flurfy! ¡Casi!</g4>
+          <p1>¡Tan cerca!...Imagino que tendremos que averiguar [*]quién trajo el regalo a la fiesta[/*] si queremos convencerle.</p1>
+        </else>
+      </if>
+      <else>
+        <g7>[sp-][xs]¿De verdad tenemos que hablar con él otra vez?[/xs]</g7>
+        <p0i>[xs][~~]*suspiro*[/~~][/xs][...] Me encargaré yo esta vez de la conversación,[..] anda.</p0i>
+        <p0>[~~]*Ehem*[/~~]...[...]¿[c] tienes un momento?</p0>
+        <c2i>¡¡[xxl][~~~][~~]STEVE[/~~][/~~~][/xxl]!![....] ¡Soy el señor ful...[...]furf...[...]flurf...!</c2i>
+        <c2i>...[...]¡Soy el capitán sosainas![...] ¡La segunda persona más lista del mundo después de ti![...] ¡Deja que te haga unas preguntas!</c2i>
+        <p2>Vale no,[...] vámonos,[...] ya me estoy arrepintiendo.</p2>
+        <c2i>¿Has visto algo sospechoso?[...] ¿Dónde estabas hace 3 días?[...] ¿Por qué eres tan guapo?[...] ¿Cuál es la capital de Asiria?</c2i>
+        <c2i>¿Sabéis que como soy detective cuando digo algo importante suena una campanita?</c2i>
+        <c2i>En plan...[...][*]¡CLINK![/*]</c2i>
+        <c2i>Gajes del oficio.[...] Te la dan cuando te gradúas, junto a la gabardina roñosa.</c2i>
+        <g4>[xl][~~]¡Vaya![/~~][/xl][...] ¿Sabe la persona más lista del mundo que lleva la máscara del revés?</g4>
+        <c2i>[sp-]...</c2i>
+        <c0i>[sp--]......</c0i>
+        <c6i>[sp--][xxs]...era simbólico.[/xxs]</c6i>
+        <p0>Mira Catarina si tu te quieres quedar con él por mi perfecto,[..] pero yo me voy YA.</p0>
+        <g7>¡No me dejes atrás,[..] por lo que más quieras!</g7>
+      </else>
+    </else>
+  </dialogue>
+
+  <dialogue id="42">
+    <p0>La puerta de la cocina estaba [?]cerrada con llave[/?] en este momento.</p0>
+  </dialogue>
+
+  <dialogue id="43">
+    <if condition="tienes_llave_sala_maquinas">
+      <set variable="puerta_sala_maquinas_abierta">1</set>
+      <p0>Por fin podemos abrir esta maldita puerta.</p0>
+      <p0>Todos nuestros esfuerzos han sido dirigidos a este momento. Espero que haya merecido la pena.</p0>
+      <p0>Demos un paso adelante y traigamos la luz a este caso de una vez por todas.</p0>
+      <g0i>¡Hey! ¿Te imaginas que ahora no hay na'?</g0i>
+      <p0>Catarina, si no sabes añadir tensión al climax, mejor quédate callada.</p0>
+      <g7i>Jo tío, solo era una pregunta.</g7i>
+    </if>
+    <else>
+      <p2>Esta puerta está [*]cerrada con llave[/*].</p2>
+      <g3i>No me extraña. [o] no quiere a nadie en la cocina cuando está haciendo su arte.</g3i>
+      <p3>La cocina es un lugar crítico para nuestra investigación. Tendremos que averiguar un modo de entrar...</p3>
+    </else>
+  </dialogue>
+
+  <dialogue id="44">
+    <o0>¡Mi pastel![....] [?]¡Alguien se ha comido mi pastel![/?]</o0>
+    <c4i>¿[i]Tu[/i] pastel?[....] ¡[xl][b]MI[/b][/xl] pastel!</c4i>
+    <h0>[xxs][ +][~~~~]O-Oh, no...[...]C-Cómo es posible...[/~~~~][/ +][/xxs]</h0>
+    <r0i>Venga chicos.[...] Dejaos ya de bromas, anda...</r0i>
+    <z0>¿Un cumpleaños sin pastel?[...] ¡Menuda panda de inútiles!</z0>
+    <s0i>¿Pero qué dices, payaso?[...] Si seguro que has sido tú.</s0i>
+    <z0>[xxxl][~~]¿Cóoooooooooooooomo?[/~~][/xxxl]</z0>
+    <z0>Qué antojo más tonto de ancas de rana me acaba de entrar, oye.</z0>
+    <p2>[~~][xxxxl]¡¡¡SILENCIOOOOOOOOOOOO!!![/xxxxl][/~~]</p2>
+  </dialogue>
+
+  <dialogue id="45">
+    <p0>Bien.[...] Escuchadme atentamente.</p0>
+    <p2>Alguno de vosotros es una maldita sanguijuela que cree que puede sabotear un cumpleaños delante de mis hocicos y salirse con la suya.</p2>
+    <p1>¡Un cumpleaños, maldita sea![...] ¡La más pura e importante de las tradiciones!</p1>
+    <p0>¡Pues te equivocas![...] ¡Como que mi nombre es [c=p]Mr. Flurfels McGoodBoy[/c] que no descansaré hasta dar caza a esa maldita rata de alcantarilla.</p0>
+    <z0i>¡Oye![...] ¡Que muchos de mis mejores amigos son ratas!</z0i>
+    <p0>¡Tú![...] ¡La que está atiborrándose a canapés de merluza!</p0>
+    <g7i>[xxs][~~~~]*Glrp*...[....]*Glrp*...[....][/~~~~]¿*Glrp*?[/xxs]</g7i>
+    <p0>Sí,[..] tú.[...] ¿[g], verdad?</p0>
+    <p3>Tu uniforme es de la [?]academia de hechicería[/?].[...] Asumo que dominas la [?]magia espacio-temporal[/?].</p3>
+    <g7i>[~~]UU[xs]uu[/xs][xxs]uh.[/xxs][xxxs]..[/xxxs][....][xs] A ver, tanto como dominar...[/~~][/xs]</g7i>
+    <p2>Maldita sea,[..] esta juventud...[...] ¿Acaso no vas a la academia?</p2>
+    <g0i>Ir,[..] ir,[..] lo que es ir,[...] [i]voy[/i].</g0i>
+    <g3i>Pero normalmente me quedo en la puerta dando golpes hasta que me la abren.[....] Entonces me doy media vuelta y vuelvo a casa.</g3i>
+    <p0>[xl][~~]Aghh...[/~~][/xl][....]Está bien.[...] ¿Qué sabes hacer?</p0>
+    <g0i>[~~]A ver...[/~~][....][~~][xs]Uhmm...[/xs][/~~][....] Debería ser capaz de [?]mostrarte los últimos segundos antes de que destaparan la tarta[/?].</g0i>
+    <p0>Perfecto,[..] eso nos ayudará a [?]encontrar al culpable[/?].</p0>
+    <g3i>Pero esto se me da regular[.] ¿eh?[...] No podré ir muy atrás.[...] [?]Sólo unos 100 segundos.[/?]</g3i>
+    <p3>¿Entonces podremos viajar atrás en el tiempo [?]del segundo 0 al 100?[/?].</p3>
+    <g0i>Correcto,[..] [?]del cero al cien[/?]. De [?]0 a 100.[/?]</g0i>
+    <r0i>¿Por qué le dan tanto énfasis a eso en concreto?</r0i>
+    <p1>[xl][~~]Mmmmh...[/~~][/xl][....]Está bien.[...] Es mejor que nada[...] ¡Venga, andando!</p1>
+    <g7i>E-[...]Espera que caliente un poco,[..] hombre.</g7i>
+    <p0>.[...].[...].[...].</p0>
+    <g3i>[xs]A ver...[/xs][...]Para retroceder en el tiempo tenía que visualizar una [?]barra de desplazamiento[/?] y [?]mover el indicador hacia la izquierda[/?].[...] Vamos a intentarlo.</g3i>
+  </dialogue>
+
+  <dialogue id="46">
+    <g7>[sp--][~~~~]¡Uf...![...] ¡Uf...![...] Esto es más cansado de lo que recordaba.[/~~~~]</g7>
+    <p1i>Bien.[...] Bueno.[...] Aceptable.[...] Ahora vámonos.</p1i>
+    <g2>¡E-[...]Espera,[..] espera![...]</g2>
+    <p2i>¿Pero qué diantres pasa ahora?</p2i>
+    <g5>Antes de irnos...[...]Cuando llegué a la fiesta,[..] [o] me dió uno de sus famosos [*]muffins[/*].</g5>
+    <g3> Hace poco lo escondí por aquí cerca.[...]\n[?]¿Podríamos encontrarlo antes de irnos?[/?]</g3>
+    <p0i>[xxs][~~~~]Grrrrr...[/~~~~][/xxs][....]Suerte tienes de que sólo necesito [?]seguir tus pasos a través del tiempo[/?] para saber [?]dónde has estado[/?] y [?]qué has tocado[/?].</p0i>
+    <set variable="tutorial_tiempoRetrasado">1</set>
+  </dialogue>
+
+  <dialogue id="47">
+    <g0>¡Ay, mírame![...] ¡Qué tipito me gasto, por dios!</g0>
+    <p0i>Tiene mérito despues de la guerra que le has declarado a los canapés de merluza.</p0i>
+  </dialogue>
+
+  <dialogue id="48">
+    <g0>Qué mala suerte lo del pastel.[...] Podría decirse...</g0>
+    <g6>[sp-][xxl][~~]...¡Que hace un día de perros![/~~][/xxl]</g6>
+    <p0i>[sp--]....Tengo más de 20 años caninos de experiencia en el campo de la investigación.</p0i>
+    <p1i>[sp--]He resuelto más de 100 casos,[..] atrapado a decenas de criminales.</p1i>
+    <p2i>[sp--]Pero incluso yo sería incapaz de encontrarle la gracia a eso.</p2i>
+  </dialogue>
+
+  <dialogue id="49">
+    <if condition="!tutorial_muffinEncontrado">
+      <p3>[~~]Hmmm...[/~~][...]¿Una [*]maceta[/*]?[...]¿Qué estabas haciendo aquí exactamente?</p3>
+      <p2>[sp-]Espera...[...]No me digas que...</p2>
+      <g5i>[~~][xl]¡Heeeeeeeey![/xl][/~~][...] ¡Has encontrado mi [?]muffin[/?]![...]\n¡Al final si que va a resultar que eres un pro!</g5i>
+      <p2>[~~~~][xl]¿Pero cómo se te ocurre enterrarlo en una maceta?[/~~~~][...] ¿No conoces el decoro?[/xl]</p2>
+      <g2i>[xl]¡Es que si no me lo roban![...][/xl] Que aquí la gente tiene las manos muy largas.</g2i>
+      <g0i>[~~~~][xl]¡Escucha![/xl][/~~~~][...] Se me ha ocurrido un plan brutal.</g0i>
+      <g3i>[sp-]Cogemos este muffin y nos lo comemos.[...] Viajamos un poco más atrás y nos lo volvemos a comer.[...] Viajamos un poco más atrás y nos lo volvemos a comer...</g3i>
+      <g5i>¡Y así todo el rato![...][~~][xxl][b]¡MUFFINS INFINITOS![/b][/xxl][/~~]</g5i>
+      <p2>[~~~~][xl]¡Deja de decir sandeces![/~~~~][...] ¿De verdad que no os enseñan nada en la escuela hoy en día?</p2>
+      <p0>La primera regla del viaje en el tiempo es que [?]no se cambia nada[/?]. Si necesitas hacer algo, tendrás que hacerlo en [*]el presente[*].</p0>
+      <p3>¡El equilibrio del tejido espacio-tiempo es muy delicado[..] y no pienso ponerlo en riesgo por un muffin de chocolate!</p3>
+      <g7i>[~~~~]Pe-[...][xxl]¡Pero está relleno de almendra![/xxl][/~~~~]</g7i>
+      <p0>[sp-]......</p0>
+      <p1>[sp--]............</p1>
+      <p2>...[xxl][~~~~]¡NO![/xxl][/~~~~][...] ¡Maldita sea,[..] no hagas esto más difícil de lo que ya es!</p2>
+      <p0>¡Ahora [?]ve al presente[/?], [?]recoge tu maldito muffin[/?] y vámonos de una vez!</p0>
+      <g4i>[~][sp--]Voooooooo[xs]ooooooooo[/xs][xxs]oooooy...[/xxs][/~]</g4i>
+      <set variable="tutorial_muffinEncontrado">1</set>
+    </if>
+    <else>
+      <p0>...En fin...</p0>
+    </else>
+  </dialogue>
+
+  <dialogue id="50">
+    <if condition="tutorial_muffinRecuperado">
+      <g7>Pues en retrospectiva creo que enterrar el muffin aquí fue una mala idea.</g7>
+      <p0i>[sp--][~]¿Tú quieres decir?[/~]</p0i>
+    </if>
+    <if condition="tutorial_muffinEncontrado">
+      <i>[g] desentierra el [*]muffin[/*].</i>
+      <g5>[~~][xl]¡Ay amor mío![/xl][/~~][...] ¿Dónde has estado toda mi vida?[...] [~~~~][xl]*Crunch*[...] *Crunch*[...] *Gulp*[...][/xl][/~~~~]</g5>
+      <p0i>[xl]Vale.[/xl][...] Ahora que tenemos tu merienda...[...]¿Podemos investigar el caso de una vez?</p0i>
+      <g4>[~~]¡Si[xs]ii[/xs][xxs]iiii[/xxs][xs]iii[/xs]iii![/~~]</g4>
+      <p0i>Bien.[...] [?]Salgamos de esta habitación y exploremos el resto de la casa[/?].</p0i>
+      <p2i>[xxl]¡¡Y que nadie más salga de aquí hasta que yo lo diga!![...] ¡¡¿Entendido?!![/xxl]</p2i>
+      <g7>[sp--]...Está crujiente...[....]No debería estar crujiente...</g7>
+      <i>[i]Ya puedes explorar la casa libremente y hablar con el resto de personajes.[/i]</i>
+      <set variable="tutorial_muffinRecuperado">1</set>
+    </if>
+    <else>
+      <g0>¿Te gustan las plantas?</g0>
+      <p3i>No.[...] Hay algo que me llama la atención de esta. La tierra está revuelta.</p3i>
+      <p0i>[?]Si regresamos en el tiempo quizá podamos encontrar alguna pista[/?].</p0i>
+    </else>
+  </dialogue>
+
+  <dialogue id="51">
+    <if condition="tutorial_muffinEncontrado">
+      <g2>[~~][xl]¡Hey![/xl][/~~][...] No no no,[..] no podemos irnos sin mi muffin.</g2>
+      <p0i>[sp--]Vaaale....</p0i>
+      <p3i>Estaba en la [?]maceta[/?],[..] ¿verdad?[...] Bastará con irnos al presente y [?]examinarla[/?].</p3i>
+      <g3>Si.[...] Sólo tengo que mover el hipotético marcador de mi barra de desplazamiento imaginaria [?]hasta la derecha del todo[/?]</g3>
+    </if>
+    <elif condition="tutorial_tiempoRetrasado">
+      <g0>No no no.[...] Estoy segura que mi [?]muffin[/?] está en esta habitación.</g0>
+      <p0i>De acuerdo.[...] Si seguimos tus movimientos a través del tiempo averiguaremos [?]qué hiciste con él[/?].</p0i>
+    </elif>
+    <else>
+      <g0>[~~~~][xl]¡No no no![...][/xl] ¡Espera![...][/~~~~] ¡Ya casi lo tengo!</g0>
+      <g0>Para retroceder en el tiempo tengo que visualizar una [?]barra de desplazamiento[/?] y [?]mover el indicador hacia la izquierda[/?].</g0>
+    </else>
+  </dialogue>
+
+  <dialogue id="52">
+    <g0>¡Ah! ¡Deja que os presente!</g0>
+    <o0g>Este es [o]. Es un cielo de chaval. Ha contribuido un montón al cumpleaños.</o0g>
+    <o0g>Fue el que hizo el grupo de Whatsapp, el que dejó su casa para hacer la fiesta, el que compró y montó las decoraciones...</o0g>
+    <o0g>el que preparó el pastel, el que hizo los canapés y las magdalenas, el que eligió la música, el que compró los cubiertos...</o0g>
+    <p0i>Si vaya, el pringado del grupo.</p0i>
+    <g3>¡Naaah! A él no le importa. ¿Verdad que no, Isidoro?</g3>
+    <o0i>Cada segundo de mi vida es un infierno del que no encuentro escapatoria.</o0i>
+    <g6>¡Jajaja! ¡Qué gracioso que es este chico!</g6>
+    <set variable="oso_conocido">1</set>
+  </dialogue>
+
+  <dialogue id="53">
+    <g7>Ah...Este.</g7>
+    <z0g>Este es [z]. Nadie le ha invitado, nadie le ha dicho dónde era la fiesta, pero el tío se las ha apañado para llegar el primero.</z0g>
+    <z0g>Ten cuidado con él. Cuando se le mete algo entre ceja y ceja hace lo que sea para salirse con la suya.</z0g>
+    <p0i>¿Tiene valor como testigo?</p0i>
+    <g4>¿Bromeas? Felipe no puede decir "buenos días" sin mentir tres veces.</g4>
+    <g7>Te intentará comer la oreja y luego...Te intentará [i]comer[/i] la oreja. ¿Entiendes lo que intento decir? Mucho cuidado.</g7>
+    <set variable="zorro_conocido">1</set>
+  </dialogue>
+
+  <!--FINISH-->
+  <dialogue id="54">
+    <if condition="culpable_hipo">
+      <set variable="finJuego">1</set>
+      <p0>¡[h] Paticorto! ¡Quedas arrestado por el robo de un pastel!</p0>
+      <p2>¡No creo que digas muchas cosas, pero las que digas podrán ser utilizadas en tu contra!</p2>
+      <g1i>...Hipo...¿Cómo has podido...? No te pega nada...</g1i>
+      <h2>[sp--][xxxs].....................................[/xxxs]</h2>
+      <h2>[sp--][xxxs].....................................[/xxxs]</h2>
+      <h3>[sp--][xxxs].....................................es que...[/xxxs]</h3>
+      <h2>[sp--][xxs]...es que vi que el pastel era de arándanos...[/xxxs]</h2>
+      <h4>[sp--][xxs]...y como [c] es alérgico a los arándanos, pues no quería que le sentara mal...[/xxxs]</h4>
+      <g7i>...Espera ¿Lo dices en serio?</g7i>
+      <h2>[sp--][f][xxs]...super en serio...[/xxxs]</h2>
+      <g4i>¿Y entonces por qué no lo dijiste?</g4i>
+      <h3>[sp--][xxs]...porque...porque...[/xxxs]</h3>
+      <h4>[sp--][xxs]...me di cuenta mientras estaba cogiendo unos muffins a escondidas...[/xxxs]</h4>
+      <z0>¡JA! ¡Tienes más coraje del que me esperaba, chaval!</z0>
+      <h3>[sp--][xxs]...tomé la decisión en un arranque de pánico...Pero cuando vi que [c] estaba tan triste...[/xxxs]</h3>
+      <h4>[sp--][xxs]...ya no quería que supiera que fui yo...[/xxxs]</h4>
+      <c3i>...</c3i>
+      <c0i>...¿Es eso cierto?</c0i>
+      <p1>Oh no.</p1>
+      <c3i>...</c3i>
+      <c5i>¡Pues haberlo dicho, hombre! ¡La tarta es lo de menos!</c5i>
+      <c5i>Entiendo que tienes tus formas distintas de procesar las cosas, pero fue una decisión salida del cariño y la preocupación.</c5i>
+      <c5i>¡Así que no te preocupes! ¡Esclavizamos un poco más a [o] en la cocina haciendo muffins y tan contentos!</c5i>
+      <o0>¡Hey!</o0>
+      <p3>Vaya. [c], estoy impresionado. Esa ha sido una respuesta sorprendentemente madura, viniendo de ti.</p3>
+      <c0i>...¿Madura?</c0i>
+      <c0i>.....</c0i>
+      <c3i>.........</c3i>
+      <c5i>[ds]...¡Claro que es madura! ¡Al fin y al cabo viene del gran [xxxxl][~~~][~~]STEVE[/~~][/~~~][/xxxxl]!</c5i>
+      <p2>Vale, ahí vamos otra vez...</p2>
+      <c5i>¡Si queréis ser tan grandes como yo, ya podéis ir siguiendo mi ejemplo! ¡Aunque ya os aviso que nunca seréis tan grandes!</c5i>
+      <c5i>Pero os podéis quedar bastante cerca. En plan. ¿A la mitad o así?</c5i>
+      <p1>[/ds]Vale, ya he oido suficiente...</p1>
+      <p0>Y en cuanto a ti, señorita.</p0>
+      <g0i>¿Si, Flurfy?</g0i>
+      <p0>Has resultado ser una compañera más...eficiente de lo que habría jurado.</p0>
+      <p3>Complementas mis...mis carencias...de forma...conveniente.</p3>
+      <g3i>Si, si. Tu sabes mucho de cosas de detectives, yo sé hacer cumplidos a la gente...¡Somos una máquina perfectamente engrasada!</g3i>
+      <p1>Entonces...Si quieres...Podríamos...</p1>
+      <p0>¿...Mantener nuestra relación profesional?</p0>
+      <g5i>...Je je...Tendré que pensarmelo...</g5i>
+      <g6i>Pero antes...¡Hay una fiesta de la que disfrutar!</g6i>
+    </if>
+    <else>
+      <if condition="hipo_conocido">
+        <h0i>[sp--][xxxs].....................................[/xxxs]</h0i>
+      </if>
+      <else>
+        <g0>¡[h]! ¡Te presento al señor [p]!</g0>
+        <h0i>[xs]¡U-[/xs][...]Un placer, señor Flurfels!</h0i>
+        <g3>¡Es uno de mis mejores amigos! Llevamos juntos desde que recuerdo. Un amor de chiquillo.</g3>
+        <g0>Que no te intimide su tamaño, no vas a conocer persona más amable a este lado del bosque.</g0>
+        <g0>Es de esa gente que cuando vais en grupo y te tienes que atar los cordones se espera a que acabes. ¡Ese tipo de persona!</g0>
+        <h4i>[sp--][xs]¡A-[...]ay, Katty![...]¡M-[...]Me vas sacar los colores...![/xs]</h4i>
+        <p3>Un placer. Bien. ¿Dónde estabas antes del crimen?</p3>
+        <h2i>[sp-][xs]¡A-[...]ah![...]E-[...]eh...[...]P-[...]Pues...[/xs]</h2i>
+        <p0>¿Has visto algo raro?[..] ¿Puedes darle una coartada a alguien?[..] ¿Alguien te la puede dar a ti?</p0>
+        <h3i>[sp--][xxs]Ah......[...]uHHhhh....</h3i>
+        <p0>¡Y no me mientas![...] ¡Si me mientes,[..] lo sabré!</p0>
+        <h4i>[sp--][xxxs].....................................</h4i>
+        <g1>¡Flurfy! ¡Lo has roto!</g1>
+        <p4i>P-Pero si sólo le estaba haciendo unas preguntas.</p4i>
+        <g3>Que Hipólito es muy sensible, hombre.</g3>
+        <g0>Una vez un camarero le dijo "Que aproveche" y él respondió "A ti también".</g0>
+        <g4>Tres semanas ingresado por ansiedad.</g4>
+        <p1i>V-vaya. ¿L-Lo siento?</p1i>
+        <h4i>[sp--][xxxs].....................................</h4i>
+        <g0>Bueno, ya se le pasará. Vamos a darle un poco de espacio.</g0>
+        <set variable="hipo_conocido">1</set>
+      </else>
+    </else>
+  </dialogue>
+
+  <dialogue id="55">
+    <g0>Anda, mira a quién tenemos por aquí.</g0>
+    <s0g>Esta es [s], la hermana mayor de [r]. Coincidí con ella una vez en un taller de esculpir piojos de escayola.</s0g>
+    <s0g>Puede parecer un poco bruta y arisca, pero en realidad tiene muy buen fondo.</s0g>
+    <s0g>Aunque...Hoy la noto especialmente áspera. No sabía que tenía tantas ganas de comer pastel.</s0g>
+    <p0i>Perdón. He desconectado después de "piojos de escayola". ¿Decías?</p0i>
+    <g4>Nada.</g4>
+    <set variable="sapo_conocido">1</set>
+  </dialogue>
+
+  <dialogue id="56">
+    <g0>Vaya vaya vaya, quién lo iba a decir.</g0>
+    <r0g>Esta es [r], la princesita del instituto. La primera de su clase, un portento al piano y la campeona vigente de salto de longitud.</r0g>
+    <r0g>¿Pero en un lugar como este? Un unicornio me habría extrañado menos.</r0g>
+    <r0g>Sobretodo porque el cumpleañero es...En fin.</r0g>
+    <r0g>No la conozco personalmente, pero me han dicho que es muy buena chica. Y parece que le acompaña su hermana [s].</r0g>
+    <r0g>¡A ver si nos pueden echar un cable!</r0g>
+    <set variable="rana_conocido">1</set>
+  </dialogue>
+
+  <dialogue id="57">
+    <if condition="!regalo_de_rana">
+      <set variable="regalo_de_rana">1</set>
+      <p0>Bueno, pues esto lo confirma más allá de toda duda. El regalo [*]pertenece a [r][/*].</p0>
+      <p0>Listo, ya podemos marchar.</p0>
+      <g0i>OOOOO...</g0i>
+      <g0i>Escúchame...¡OOOOOO....!</g0i>
+      <g3i>...Podríamos echarle un vistacín chiquitín de nada al contenido de la caja.</g3i>
+      <p2>Caterina, no piens-</p2>
+      <g2i>"UR UR CUMPLEAÑOS UR UR ETIQUETA UR UR RESPETAR LA PRIVACIDAD BÁSICA"</g2i>
+      <g4i>Que sí, que ya me he aprendido el cuento. ¿Pero no tienes curiosidad de por qué no dejaron el regalo en la [?]habitación de regalos[/?]?</g4i>
+      <g7i>¿Por qué hace que lo lleve su hermana? ¿Por qué dejarlo tan lejos y confiar en que alguien lo encuentre y lo lleve a su sitio correcto?</g7i>
+      <g7i>¿Por qué no va firmado? ¿Por qué tomarse tantas molestias para que nadie sepa que es suyo?</g7i>
+      <g2i>¿¡De verdad que no te llama la atención todo eso!?</g2i>
+      <p0>...</p0>
+      <p0>Como iba diciendo.</p0>
+      <p0>Caterina, no pienso abrir ningún regalo de otra persona.</p0>
+      <p1>...</p1>
+      <p0>Pero.</p0>
+      <p0>Si por un casual, en un despiste por mi parte, vieras el contenido...</p0>
+      <p1>...no me importaría que me pusieras al corriente.</p1>
+      <g6i>¡FLURFY! ¡SABÍA QUE TU Y YO NO ERAMOS TAN DISTINTOS!</g6i>
+      <p2>¡Claro que somos distintos! ¡Lo tuyo es cotilleo mórbido! Lo mío es...</p2>
+      <p0>...curiosidad académica.</p0>
+      <g0i>¡Llámalo como quieras! ¡Si voy a poder ver lo que hay dentro me da lo mism...</g0i>
+      <g0i>...</g0i>
+      <g0i>...</g0i>
+      <i>[g] se levanta y empieza a caminar hacia la orilla del rio.</i>
+      <g0i>...</g0i>
+      <i>Se queda congelada con la mirada perdida en el horizonte.</i>
+      <g0i>...</g0i>
+      <g0i>...Bueno, pues nada.</g0i>
+      <p0>...</p0>
+      <p0>...</p0>
+      <p0>...¡A ver! ¿Pero qué es?</p0>
+      <g0i>...</g0i>
+      <g0i>...</g0i>
+      <g0i>...</g0i>
+      <g0i>...Una carta de amor dirigida a [c].</g0i>
+      <p0>...</p0>
+      <p0>...</p0>
+      <p0>...Je.</p0>
+      <p0>Je Je Je.</p0>
+      <p0>Je Je Je JE JA JA JA JA JA JA JAJAJAJA.</p0>
+      <g4i>¿Primera vez que te veo reir y es por algo como esto?</g4i>
+      <p0>JAJAJAJAJAJAJAJAJA ¡Ay! ¡Ay! ¡Ay!</p0>
+      <p0>...¡Parece que la curiosidad mató al gato!</p0>
+      <g4i>Pf...¡A otro perro con ese hueso!</g4i>
+      <g0i>Je....</g0i>
+      <p0>Ay. Venga. Vámonos y olvidemos esto.</p0>
+      <g0i>Si, será mejor...</g0i>
+    </if>
+    <else>
+      <g7i>NONONONONONONONO.</g7i>
+    </else>
+  </dialogue>
+
+  <dialogue id="58">
+    <i>[r] está cerrando la caja.</i>
+  </dialogue>
+
+  <dialogue id="59">
+    <p3>Me sorprende que [r] sea capaz de cargar con una caja tan grande ella sola.</p3>
+    <g0i>¡Te sorprendería! ¡Es mucho más fuerte de lo que parece!</g0i>
+    <g2i>¡Y mira que tipito que me lleva! ¡Con lo que traga! No sé dónde se lo mete.</g2i>
+    <g0i>...</g0i>
+    <g4i>De hecho mejor vámonos porque me está empezando a caer mal.</g4i>
+  </dialogue>
+
+  <dialogue id="60">
+    <g0>Estas son las taquillas que [o] utiliza para dejar la ropa de trabajo y tal.</g0>
+    <g3>Nos está dejando usarlas para dejar nuestras cosas durante la fiesta. Qué chico más majo.</g3>
+  </dialogue>
+
+  <dialogue id="61">
+    <p4>¿Pero qué demonios es ese ruido?</p4>
+    <g7i>Suena bajo la alfombra...</g7i>
+  </dialogue>
+
+  <dialogue id="62">
+    <p1>Ah...es una alcantarilla...</p1>
+    <p0>...</p0>
+    <p3>...¡Una alcantarilla! ¡Cómo no lo he pensado antes!</p3>
+    <p0>El criminal viajó por las tuberías y se comió el pastel desde abajo, pasando completamente desapercibido!</p0>
+    <p0>¡Sólo queda una cosa por hacer!</p0>
+    <g7i>Oye...No irás a...</g7i>
+    <p0>¡Nos vemos en el otro lado!</p0>
+    <g3i>Mirale...Se pone el caso interesante y vuelve a sus años de cachorro.</g3i>
+    <g6i>¡Espera, que voy!</g6i>
+  </dialogue>
+
+  <dialogue id="63">
+    <p0>Vale, me ha podido el entusiasmo.</p0>
+    <p2>¡Pero parece que el criminal [*]utilizó el baño de la izquierda[/*]!</p2>
+    <g6i>¡Qué bueno! ¡Ya tenemos a nuestro...!</g6i>
+    <g7i>...oh.</g7i>
+    <set variable="culpable_hipo">1</set>
+  </dialogue>
+
+  <dialogue id="64">
+    <i>No queda pastel.</i>
+  </dialogue>
+
+  <dialogue id="65">
+    <i>Una maceta</i>
+  </dialogue>
+
+</dialogues>
+
+<!--
+Variables:
+
+cumpleanyero_conocido
+oso_conocido
+zorro_conocido
+hipo_conocido
+sapo_conocido
+rana_conocido
+oso_perfeccionista
+incendio_descubierto
+oso_apaga_incendio_descubierto
+zorro_migas
+llave_en_regalo
+hipo_en_banyo
+regalo_en_sala_de_regalos
+sapa_llego_sin_regalo
+llegaron_barca_con_regalo
+buscar_regalo
+remos_en_armario
+sapa_guardo_llave_en_abrigo
+regalo_de_rana
+tienes_remos
+tienes_llave_armario
+permiso_para_abrir_regalos
+tienes_llave_sala_maquinas
+culpable_hipo
+nadie_levanto_tapa
+steve_se_siente_solo
+-->

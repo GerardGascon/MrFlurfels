@@ -1,0 +1,332 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ded47588579f3047b1c3cd72cd87044, type: 3}
+  m_Name: Sounds
+  m_EditorClassIdentifier: 
+  mainMixer: {fileID: 24300002, guid: 22ec99e23d2f8c744b9b510bbbb06003, type: 2}
+  sfxMixer: {fileID: -809652279727075141, guid: 22ec99e23d2f8c744b9b510bbbb06003, type: 2}
+  sounds:
+  - name: blob1
+    clip: {fileID: 8300000, guid: f92d7b475bdb24e449c118a087c3dec6, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: blob2
+    clip: {fileID: 8300000, guid: e350301f7586d79408db00dce145fee5, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pregunta
+    clip: {fileID: 8300000, guid: 9a8c74741c26f6242955fd02a3a2e533, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: acelerar_bucle
+    clip: {fileID: 8300000, guid: 9056dbe0cdb8c8f4ea981486a80481f6, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: acelerar_start
+    clip: {fileID: 8300000, guid: 39af5797116c79246946a7688964008f, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: frenar_bucle
+    clip: {fileID: 8300000, guid: 3b415a161d30799458901c061659c470, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: frenar_start
+    clip: {fileID: 8300000, guid: e0029fe82aa55a440a265f6569b8efd2, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: abrir_regalo
+    clip: {fileID: 8300000, guid: 37fb182db0f88df44ab270dd3896d619, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: cascada
+    clip: {fileID: 8300000, guid: e162e49154bad6a4f805f4bdb7da390a, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pajaros
+    clip: {fileID: 8300000, guid: 1df34215993a28e46b30a5c1e759d33f, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: rio
+    clip: {fileID: 8300000, guid: 376ee10e401995b45be93746d73ddd92, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: confeti
+    clip: {fileID: 8300000, guid: 324af9c47acd3d1449307802fdd4e36e, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: cremallera
+    clip: {fileID: 8300000, guid: 4a18dfd20a0422c43bd010aa0610638f, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: hover_menu
+    clip: {fileID: 8300000, guid: 2fca7c9084f1fea4399fd60537de2c69, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: metal
+    clip: {fileID: 8300000, guid: e1762149811fe554e894c6cfbacdece3, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_amort_1
+    clip: {fileID: 8300000, guid: c2ea46ad9e4da5f48b54c6ea935b1592, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_amort_2
+    clip: {fileID: 8300000, guid: 9414df48d84a7d54882d1d45f5033b05, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_amort_3
+    clip: {fileID: 8300000, guid: 6d1b7ee0f7f46b548a681774b2e19fb8, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_amort_4
+    clip: {fileID: 8300000, guid: 88f88c3aa38bc834da27675a18fa61f1, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_duro_1
+    clip: {fileID: 8300000, guid: 3c90b15753d8a734a908ffa398229519, type: 3}
+    type: 1
+    volume: 0.2
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_duro_2
+    clip: {fileID: 8300000, guid: f632517e8632b26468426e9522435214, type: 3}
+    type: 1
+    volume: 0.2
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_duro_3
+    clip: {fileID: 8300000, guid: d6d80cf1ae8b73049b25ec7297e98d3b, type: 3}
+    type: 1
+    volume: 0.4
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_duro_4
+    clip: {fileID: 8300000, guid: 49e8fa1d201501d4b85da6201618bb05, type: 3}
+    type: 1
+    volume: 0.4
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_hierba_1
+    clip: {fileID: 8300000, guid: 49e8fa1d201501d4b85da6201618bb05, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_hierba_2
+    clip: {fileID: 8300000, guid: 5a66d1551f3d5414080ea740091db929, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_hierba_3
+    clip: {fileID: 8300000, guid: eaf784e2329d17d48b801bf2c29f0cec, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: paso_hierba_4
+    clip: {fileID: 8300000, guid: c75d89c19d4667f4da82250f723e8224, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: puerta
+    clip: {fileID: 8300000, guid: 7a2faac8e093a9745bb1fe04eb26c010, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: seleccion_menu
+    clip: {fileID: 8300000, guid: ebab29d64696e4047b1639056ebd2bf1, type: 3}
+    type: 1
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: cinematica
+    clip: {fileID: 8300000, guid: fd8175c63b93f854091af5135fe3b980, type: 3}
+    type: 0
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: final_bueno
+    clip: {fileID: 8300000, guid: 924ada3283356be419544f8f7389560a, type: 3}
+    type: 0
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: final_malo
+    clip: {fileID: 8300000, guid: a15fb5f5b4a2c9e4fa428d4f5a609adb, type: 3}
+    type: 0
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: menu
+    clip: {fileID: 8300000, guid: 10bab02b93d4a61468d876931b883f94, type: 3}
+    type: 0
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: musica_juego
+    clip: {fileID: 8300000, guid: bf496fc99c832d044b00c654cfa36aac, type: 3}
+    type: 0
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: musica_steve
+    clip: {fileID: 8300000, guid: 7d9ab3089dc6de44198b8f54e497cc8d, type: 3}
+    type: 0
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    source: {fileID: 0}

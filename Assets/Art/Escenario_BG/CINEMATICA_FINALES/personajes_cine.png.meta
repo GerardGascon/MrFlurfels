@@ -1,0 +1,1281 @@
+fileFormatVersion: 2
+guid: b6d6b44a17b1de54fbe1011c832760a4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: personajes_cine_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3487
+        width: 452
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f44a4e31560b8c4ebd5bcc3108b67c5
+      internalID: -1940487828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_1
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 3441
+        width: 462
+        height: 612
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a650d413781f1bf409af28d32ec121c6
+      internalID: -804251745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_2
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 3453
+        width: 450
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3c042a0ccb8eb40a3c2e1623a8a8c3
+      internalID: -196938015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_3
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 3491
+        width: 456
+        height: 576
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f3fa736784ca84b855299f4d96b643
+      internalID: -1236527852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_4
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 3485
+        width: 540
+        height: 586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca79661b6915b7f4b928be95f9860dda
+      internalID: 1332011386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_5
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 3473
+        width: 380
+        height: 576
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f034eddae4d3b6e49a4b8cd9acc9ce3b
+      internalID: -1907796662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_6
+      rect:
+        serializedVersion: 2
+        x: 2967
+        y: 3465
+        width: 508
+        height: 594
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89cdab105d3e1a42aeab9dafc6720b2
+      internalID: -1403932174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_7
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 3459
+        width: 434
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913135b84bd80d84a8a5274b4371ba01
+      internalID: 1648782335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2837
+        width: 456
+        height: 586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92efb8f1ce76ca4e9e22da810236e4b
+      internalID: -973629681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_9
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 2813
+        width: 470
+        height: 580
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49777048afca39f448f7dafd5f08c5cf
+      internalID: 117780111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_10
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 2851
+        width: 378
+        height: 520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8716089a821f7a64f808b7ef3db9993f
+      internalID: 850954400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_11
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 2865
+        width: 420
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a4b5a7970ada740bcdc6ea5cb25766
+      internalID: 747830336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_12
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 2859
+        width: 422
+        height: 542
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068a1af979f740e48949373ac2db76ad
+      internalID: 509604187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_13
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 2863
+        width: 400
+        height: 520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4093691b21f41324c88ab9e0e01e03ec
+      internalID: -744823564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_14
+      rect:
+        serializedVersion: 2
+        x: 2823
+        y: 2803
+        width: 432
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc81529b2cb770a459cbc7c0fb1c2fe6
+      internalID: -1091980729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_15
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 2753
+        width: 402
+        height: 606
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c762cd2ad86da6b4cb6c9ecabe30becc
+      internalID: -1542212266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_16
+      rect:
+        serializedVersion: 2
+        x: 3697
+        y: 2894
+        width: 386
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9f83bf364bf4542a683a57b324e7d3
+      internalID: 572798044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_17
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2197
+        width: 608
+        height: 570
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1e113de70758e428cb0dce9d1010ef
+      internalID: -298261842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_18
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 2195
+        width: 432
+        height: 616
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b2b7f5973089d4b9ed6234900d193e
+      internalID: 1127041108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_19
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 2173
+        width: 546
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3307823d83450f4d9ec4da42bec3239
+      internalID: 1371956962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_20
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 2247
+        width: 432
+        height: 598
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33529b98f8b3b68428882296751563b0
+      internalID: 1028715173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_21
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 2179
+        width: 546
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef40b5cd39a6bc541843d27941071f35
+      internalID: -517797852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_22
+      rect:
+        serializedVersion: 2
+        x: 2841
+        y: 2193
+        width: 430
+        height: 536
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bd7315b1cba3a4a869a503401ab775
+      internalID: 764317909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_23
+      rect:
+        serializedVersion: 2
+        x: 3595
+        y: 2215
+        width: 468
+        height: 536
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa72cd2008612d745a37ed4f36b70c63
+      internalID: -1746107280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_24
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1593
+        width: 436
+        height: 568
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9f44db22a071446b4d97d26a101b59
+      internalID: 638947269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_25
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1617
+        width: 438
+        height: 568
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf06a084fdec7f49bcf94c6aa6c50ef
+      internalID: 1780303629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_26
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1593
+        width: 554
+        height: 574
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a160b03530355f84eb089e1890fadd55
+      internalID: -1935846578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_27
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1579
+        width: 606
+        height: 562
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28adf3d742c2884d838886384c49fa0
+      internalID: 642190153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_28
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 1597
+        width: 450
+        height: 564
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e4c7ffb0d1ec64eae283cca8376ffa
+      internalID: -926014229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_29
+      rect:
+        serializedVersion: 2
+        x: 2693
+        y: 1565
+        width: 461
+        height: 560
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c051f57202b4b4daa9ac3413270a9d
+      internalID: 1123529458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_30
+      rect:
+        serializedVersion: 2
+        x: 3193
+        y: 1577
+        width: 450
+        height: 572
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7625774958e1fcd45849ec9c03a28f53
+      internalID: -1704172041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_31
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 1573
+        width: 416
+        height: 606
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fa1e83b3ecf884caf13fe76cf1a7dd
+      internalID: -516905527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_32
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 999
+        width: 502
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd82064a4738c94f99400dc4a2118cb
+      internalID: -1976915836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_33
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1003
+        width: 462
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461bde6d326960b46a5fbb6c37d280d2
+      internalID: 845019386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_34
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 929
+        width: 476
+        height: 612
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0160677b8de334995a211a342abb6d
+      internalID: 1378903591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_35
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 921
+        width: 452
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40166d46b990fb8479e35f957450cea7
+      internalID: 1983014947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_36
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 901
+        width: 476
+        height: 612
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3468a80ed57c0e468b1f31bd140be06
+      internalID: -503259281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_37
+      rect:
+        serializedVersion: 2
+        x: 2757
+        y: 891
+        width: 432
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6f65a55a288a6408e7e3c79c7b1cb1
+      internalID: 1777551417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_38
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 886
+        width: 436
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b92c90b9cd551a4c8367813360f2144
+      internalID: 1485341496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_39
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 939
+        width: 400
+        height: 608
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac14c5f871215dd4ebf1fac3a997a40b
+      internalID: 1345789369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_40
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 307
+        width: 452
+        height: 652
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175dcfb2c67e20b4bbd1c008ac01b515
+      internalID: 1583614756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_41
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 339
+        width: 460
+        height: 560
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa8734633a9f904e9afdb985c741ef9
+      internalID: -110522460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_42
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 317
+        width: 444
+        height: 564
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c8574ab3e16124499244e24529b925
+      internalID: 1485332021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_43
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 311
+        width: 442
+        height: 564
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57dccf40b6a91045811cc856ab9c8c7
+      internalID: -1301945028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_44
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 551
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd038f236e6a6344180c17806b5acfdb
+      internalID: 578389602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_45
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 287
+        width: 434
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6b75c8b96c0cd439a5d6f5172da614
+      internalID: -628519134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_46
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 263
+        width: 436
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57389c7613aebee47bdd10b8d9bd4d4a
+      internalID: -1355378538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_47
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 235
+        width: 434
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824936e4d6da0b445859788afb70dbe9
+      internalID: -1909891477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_48
+      rect:
+        serializedVersion: 2
+        x: 3653
+        y: 281
+        width: 398
+        height: 606
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d039acb8d7244ac42bb7b9e74d7854b1
+      internalID: 1254645418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_49
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 537
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3cc6eeffabfdc4489435d6f0cc501e
+      internalID: -795630726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_cine_50
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 99
+        width: 276
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92524a5ccf24694b9137943ca5ee4a8
+      internalID: 1327881614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      personajes_cine_20: 1028715173
+      personajes_cine_38: 1485341496
+      personajes_cine_50: 1327881614
+      personajes_cine_43: -1301945028
+      personajes_cine_16: 572798044
+      personajes_cine_31: -516905527
+      personajes_cine_1: -804251745
+      personajes_cine_45: -628519134
+      personajes_cine_30: -1704172041
+      personajes_cine_26: -1935846578
+      personajes_cine_42: 1485332021
+      personajes_cine_22: 764317909
+      personajes_cine_47: -1909891477
+      personajes_cine_2: -196938015
+      personajes_cine_25: 1780303629
+      personajes_cine_29: 1123529458
+      personajes_cine_5: -1907796662
+      personajes_cine_14: -1091980729
+      personajes_cine_24: 638947269
+      personajes_cine_4: 1332011386
+      personajes_cine_13: -744823564
+      personajes_cine_27: 642190153
+      personajes_cine_34: 1378903591
+      personajes_cine_23: -1746107280
+      personajes_cine_0: -1940487828
+      personajes_cine_21: -517797852
+      personajes_cine_37: 1777551417
+      personajes_cine_8: -973629681
+      personajes_cine_41: -110522460
+      personajes_cine_46: -1355378538
+      personajes_cine_48: 1254645418
+      personajes_cine_18: 1127041108
+      personajes_cine_11: 747830336
+      personajes_cine_3: -1236527852
+      personajes_cine_44: 578389602
+      personajes_cine_6: -1403932174
+      personajes_cine_10: 850954400
+      personajes_cine_35: 1983014947
+      personajes_cine_33: 845019386
+      personajes_cine_40: 1583614756
+      personajes_cine_9: 117780111
+      personajes_cine_15: -1542212266
+      personajes_cine_32: -1976915836
+      personajes_cine_49: -795630726
+      personajes_cine_39: 1345789369
+      personajes_cine_19: 1371956962
+      personajes_cine_28: -926014229
+      personajes_cine_36: -503259281
+      personajes_cine_7: 1648782335
+      personajes_cine_12: 509604187
+      personajes_cine_17: -298261842
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
